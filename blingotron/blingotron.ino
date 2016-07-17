@@ -2,6 +2,7 @@
 #include <VarSpeedServo.h>
 #include <Arduino.h>
 
+
 //ENUM
 typedef enum {FULLY_FOLDED, TOP_OPEN, FRONT_OPEN, SCREEN_OPEN, SCREEN_CLOSED, FRONT_CLOSED, TOP_CLOSED, FULLY_DEPLOYED, FINISHED} displayState;
 typedef enum {TOGGLE_ON, TOGGLE_OFF} toggleSwitchState;
@@ -16,6 +17,7 @@ const int led_pin           = 13;      // the number of the LED pin
 const int switch_pin        = 4;
 const int motor_right_pin   = 5;
 const int motor_left_pin    = 6;
+// PLEASE REMOVE THIS LINE BELOW!
 const long blink_interval   = 5000;           // interval at which to blink (milliseconds)
 
 // Define the number of samples to keep track of.  The higher the number,
